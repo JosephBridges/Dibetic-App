@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
-import org.wit.dibeticapp.MainActivity
-import org.wit.dibeticapp.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
         //3 Second Splash Time
         Handler().postDelayed({
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashActivity, MainActivity2::class.java))
             finish()
         },3000)
 
