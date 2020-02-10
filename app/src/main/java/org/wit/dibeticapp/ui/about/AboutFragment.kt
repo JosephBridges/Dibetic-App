@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import org.wit.dibeticapp.R
 
+//About Page
 class AboutFragment : Fragment() {
 
     private lateinit var slideshowViewModel: AboutViewModel
