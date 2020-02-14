@@ -12,10 +12,19 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_info">Info</string>
+    <string name="home_title">Welcome User</string>
+    <string name="home_subtitle">Enter in your levels</string>
+    <string name="button_text">Enter</string>
     <string name="menu_about">About</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_tools">Coming Soon</string>
+    <string name="menu_share">Coming Soon</string>
+    <string name="menu_send">Coming Soon</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="amount">amount text</string>
+    <string name="total">total text</string>
+    <string name="totalSoFar">total so far text</string>
+    <string name="enter_amount">enter amount text</string>
+    <string name="action_home">action home text</string>
+    <string name="action_info">action info text</string>
 </resources>
