@@ -31,8 +31,7 @@ class DiabeticAdapter constructor(private var diabetics: List<DiabeticModel>)
     class MainHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(diabetic: DiabeticModel) {
-            itemView.paymentamount.text = diabetic.amount.toString()
-            itemView.paymentmethod.text = diabetic.paymentmethod
+            itemView.infoNo.text = diabetic.displayno
             itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
         }
     }

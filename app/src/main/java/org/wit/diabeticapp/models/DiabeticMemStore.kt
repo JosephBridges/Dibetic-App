@@ -28,7 +28,7 @@ class DiabeticMemStore : DiabeticStore {
     }
 
     fun logAll() {
-        Log.v("Donate","** Donations List **")
-        diabetics.forEach { Log.v("Donate","$it") }
+        Log.v("Diabetic","** Diabetics List **")
+        diabetics.forEach { Log.v("Diabetic","$it") }
     }
 }

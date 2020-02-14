@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
-import kotlinx.coroutines.Dispatchers.Main
+import org.wit.diabeticapp.activities.Main
 
 class SplashActivity : AppCompatActivity() {
 
