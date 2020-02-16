@@ -64,12 +64,25 @@
 
     <EditText
         android:id="@+id/InfoNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="152dp"
         android:ems="10"
-        android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|none|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
-        android:text="Name"
-        tools:ignore="MissingConstraints" />
+        android:inputType="textUri|textShortMessage|textLongMessage|textAutoCorrect|textWebEditText|textFilter|textPersonName|text|textPhonetic"
+        android:text="Enter Text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/Level"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="230dp"
+        android:inputType="numberSigned"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="Enter Levels" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

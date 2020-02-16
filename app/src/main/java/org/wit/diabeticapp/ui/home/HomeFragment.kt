@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.diabetic_card.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import org.wit.diabeticapp.R
@@ -41,10 +40,12 @@ class HomeFragment : Fragment() {
             }
     }
 
+
     fun setButtonListener( layout: View1) {
         layout.homeButton.setOnClickListener {
             val display = InfoNo.text.toString()
-            app.diabeticStore.create(DiabeticModel(display = display))
+            val level = Level.text.toString()
+            app.diabeticStore.create(DiabeticModel(display = display, level = level))
 
         }
     }

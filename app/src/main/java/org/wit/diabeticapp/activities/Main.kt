@@ -13,7 +13,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.app_bar_main2.*
+import kotlinx.android.synthetic.main.fragment_info.*
 import org.wit.diabeticapp.R
+import org.wit.diabeticapp.adapters.DiabeticAdapter
+import org.wit.diabeticapp.models.DiabeticModel
+import org.wit.diabeticapp.ui.home.HomeFragment
 
 class Main : AppCompatActivity() {
 

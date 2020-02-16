@@ -6,5 +6,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class DiabeticModel(
     var id: Long = 0,
-    var display: String = "") : Parcelable
+    var display: String = "",
+    var level: String = ""
+) : Parcelable
 

@@ -34,5 +34,17 @@
             android:textSize="24sp"
             tools:text="test" />
 
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:text="1000" />
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
