@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "827739843377",
+    "firebase_url": "https://diabetic-app-20a97.firebaseio.com",
+    "project_id": "diabetic-app-20a97",
+    "storage_bucket": "diabetic-app-20a97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827739843377:android:e4176646aedf0bb1af5e10",
+        "android_client_info": {
+          "package_name": "org.wit.dibeticapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827739843377-0mjfjemjjbl1qq6ogg5a81o8o15f1idg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.wit.dibeticapp",
+            "certificate_hash": "d097798651ae206f7521b2c0442cad4cdc36132d"
+          }
+        },
+        {
+          "client_id": "827739843377-5jhofhphq4u710fptrkcl20qqoilak65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDODsAJJxQ6oqPzzQHNs_J9eBuBeJUs6Oo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827739843377-5jhofhphq4u710fptrkcl20qqoilak65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

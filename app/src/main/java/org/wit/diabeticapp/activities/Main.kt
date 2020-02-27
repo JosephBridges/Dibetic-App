@@ -13,11 +13,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.app_bar_main2.*
-import kotlinx.android.synthetic.main.fragment_info.*
 import org.wit.diabeticapp.R
-import org.wit.diabeticapp.adapters.DiabeticAdapter
-import org.wit.diabeticapp.models.DiabeticModel
-import org.wit.diabeticapp.ui.home.HomeFragment
+import androidx.navigation.ui.AppBarConfiguration as AppBarConfiguration1
 
 class Main : AppCompatActivity() {
 
@@ -39,11 +36,11 @@ class Main : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         // Sets up the navigation
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
+        appBarConfiguration = AppBarConfiguration1(
+            topLevelDestinationIds = setOf(
                 R.id.nav_home, R.id.nav_info, R.id.nav_about,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_send
-            ), drawerLayout
+            ), drawerLayout = drawerLayout
         )
 
         setupActionBarWithNavController(navController, appBarConfiguration)
