@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="org.wit.diabeticapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name="org.wit.diabeticapp.main.DiabeticApp"
         android:allowBackup="true"
@@ -12,9 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
-            android:name="org.wit.diabeticapp.SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:name="org.wit.diabeticapp.activities.Main"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity android:name="org.wit.diabeticapp.activities.Login"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="org.wit.diabeticapp.activities.Main"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 
