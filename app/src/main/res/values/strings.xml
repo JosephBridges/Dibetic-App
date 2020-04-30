@@ -26,6 +26,10 @@
     <string name="image_desc">Medical Image</string>
     <string name="access">Access Control</string>
 
+    <string name="action_edit">Edit Donation</string>
+    <string name="action_update">Update</string>
+    <string name="message_edit">Please Update your Details Below</string>
+
     <string name="label_emailpassword">Email/Password Authentication</string>
     <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
     <string name="sign_in">Sign In</string>

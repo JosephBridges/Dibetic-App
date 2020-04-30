@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
@@ -13,6 +15,7 @@ import org.jetbrains.anko.info
 import org.wit.diabeticapp.R
 import org.wit.diabeticapp.main.DiabeticApp
 import org.wit.diabeticapp.models.DiabeticModel
+import org.wit.diabeticapp.ui.info.InfoFragment
 import org.wit.diabeticapp.utils.*
 import java.util.HashMap
 import android.view.View as View1
@@ -21,7 +24,6 @@ class HomeFragment : Fragment(), AnkoLogger {
 
     lateinit var app: DiabeticApp
     lateinit var loader : AlertDialog
-    lateinit var eventListener : ValueEventListener
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +43,7 @@ class HomeFragment : Fragment(), AnkoLogger {
         return root;
     }
 
+
     companion object {
         @JvmStatic
         fun newInstance() =
@@ -56,14 +59,13 @@ class HomeFragment : Fragment(), AnkoLogger {
             val level = Level.text.toString()
             writeNewDiabetic(DiabeticModel(display = display, level = level, email = app.auth.currentUser?.email))
 
+            val fragment = InfoFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.homeFrame, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
         }
-    }
-
-    override fun onPause() {
-        super.onPause()
-        app.database.child("user-diabetics")
-            .child(app.auth.currentUser!!.uid)
-            .removeEventListener(eventListener)
     }
 
     fun writeNewDiabetic(diabetic: DiabeticModel) {
@@ -86,5 +88,17 @@ class HomeFragment : Fragment(), AnkoLogger {
         hideLoader(loader)
     }
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

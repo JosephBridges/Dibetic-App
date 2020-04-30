@@ -43,6 +43,7 @@ class DiabeticAdapter constructor(var diabetics: ArrayList<DiabeticModel>,
     class MainHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(diabetic: DiabeticModel, listener: DiabeticListener) {
+            itemView.tag = diabetic
             itemView.infoNo.text = diabetic.display
             itemView.level.text = diabetic.level
             itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
