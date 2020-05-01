@@ -57,7 +57,9 @@
     <string name="menu_report_all">All Donations</string>
 
     <string name="favourites_title">Favourite Donations</string>
-    <string name="menu_report_favorite">Map</string>
 
+    <string name="sign_in_google">Sign In with Google</string>
+    <string name="sign_in_email">Sign In with Email</string>
+    <string name="sign_in_phone">Sign In with Phone</string>
 
 </resources>

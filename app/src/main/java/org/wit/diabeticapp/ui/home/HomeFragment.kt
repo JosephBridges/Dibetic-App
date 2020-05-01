@@ -58,7 +58,7 @@ class HomeFragment : Fragment(), AnkoLogger {
             val display = InfoNo.text.toString()
             val level = Level.text.toString()
             writeNewDiabetic(DiabeticModel(display = display, level = level, profilepic = app.userImage.toString(),
-                email = app.auth.currentUser?.email))
+                email = app.currentUser?.email))
 
             val fragment = InfoFragment()
             val fragmentManager = activity!!.supportFragmentManager
@@ -72,7 +72,7 @@ class HomeFragment : Fragment(), AnkoLogger {
     fun writeNewDiabetic(diabetic: DiabeticModel) {
         showLoader(loader, "Adding Diabetic to Firebase")
         info("Firebase DB Reference : $app.database")
-        val uid = app.auth.currentUser!!.uid
+        val uid = app.currentUser!!.uid
         val key = app.database.child("diabetics").push().key
         if (key == null) {
             info("Firebase Error : Key Empty")
