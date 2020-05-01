@@ -57,7 +57,8 @@ class HomeFragment : Fragment(), AnkoLogger {
         layout.homeButton.setOnClickListener {
             val display = InfoNo.text.toString()
             val level = Level.text.toString()
-            writeNewDiabetic(DiabeticModel(display = display, level = level, email = app.auth.currentUser?.email))
+            writeNewDiabetic(DiabeticModel(display = display, level = level, profilepic = app.userImage.toString(),
+                email = app.auth.currentUser?.email))
 
             val fragment = InfoFragment()
             val fragmentManager = activity!!.supportFragmentManager

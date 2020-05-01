@@ -11,6 +11,7 @@ data class DiabeticModel(
     var uid: String? = "",
     var display: String = "N/A",
     var level: String = "N/A",
+    var profilepic: String = "",
     var email: String? = "joe@bloggs.com"
 ) : Parcelable
 
@@ -21,6 +22,7 @@ data class DiabeticModel(
             "uid" to uid,
             "display" to display,
             "level" to level,
+            "profilepic" to profilepic,
             "email" to email
         )
     }
