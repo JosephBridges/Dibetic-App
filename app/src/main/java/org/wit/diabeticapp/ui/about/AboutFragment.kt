@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import org.wit.diabeticapp.R
 
-//1
 class AboutFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +17,6 @@ class AboutFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         activity?.title = getString(R.string.aboutus_title)
         return inflater.inflate(R.layout.fragment_about, container, false)
     }

@@ -58,11 +58,9 @@ class DiabeticAdapter constructor(var diabetics: ArrayList<DiabeticModel>,
 
             if(!diabetic.profilepic.isEmpty()) {
                 Picasso.get().load(diabetic.profilepic.toUri())
-                    //.resize(180, 180)
                     .transform(CropCircleTransformation())
                     .into(itemView.imageIcon)
             }
-
         }
     }
 }

@@ -5,9 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import org.jetbrains.anko.AnkoLogger
@@ -43,7 +40,6 @@ class HomeFragment : Fragment(), AnkoLogger {
         return root;
     }
 
-
     companion object {
         @JvmStatic
         fun newInstance() =
@@ -51,7 +47,6 @@ class HomeFragment : Fragment(), AnkoLogger {
                 arguments = Bundle().apply {}
             }
     }
-
 
     fun setButtonListener( layout: View1) {
         layout.homeButton.setOnClickListener {
@@ -88,7 +83,6 @@ class HomeFragment : Fragment(), AnkoLogger {
         app.database.updateChildren(childUpdates)
         hideLoader(loader)
     }
-
 }
 
 

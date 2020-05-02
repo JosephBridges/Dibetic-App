@@ -3,9 +3,6 @@ package org.wit.diabeticapp.main
 import android.app.Application
 import android.net.Uri
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.model.Marker
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.storage.StorageReference
